@@ -57,9 +57,18 @@
         <p>EU TE AMO💖<p>
         <p>Feliz 6 meses de namoro Amor da Minha Vida!🎈❤️</p>
     </div>
-   <audio>
-   <iframe width="0" height="0" src="https://www.youtube.com/embed/ShZ978fBl6Y?autoplay=1&loop=1&playlist=ShZ978fBl6Y" 
-    frameborder="0" allow="autoplay" allowfullscreen></iframe>
-  </audio>
+   <button onclick="playVideo()">💖 Tocar Música 💖</button>
+
+<div id="yt-player" style="margin-top:20px;"></div>
+
+<script>
+  function playVideo() {
+    document.getElementById('yt-player').innerHTML = `
+      <iframe width="0" height="0" src="https://www.youtube.com/embed/ShZ978fBl6Y?autoplay=1" 
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    `;
+  }
+</script>
+
 </body>
 </html>

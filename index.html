@@ -12,7 +12,7 @@
             background-size: cover;
             background-position: center;
             font-family: 'Georgia', serif;
-            color: #c48b9f;
+            color: #fff1e6;
             text-align: center;
         }
        
@@ -46,17 +46,35 @@
         <p>Porque o meu sonho era encontrar alguém igual a você!<p>
         <p>E se eu te amo?<p>
         <p>Claro que amo,<p>
-        <p>Quando eu penso em você, o meu coração bate mais forte e um sorriso sai de mim de forma automática,<p>
-        <p>como se você tivesse o poder de me fazer feliz com apenas um olhar! Não me cansarei de dizer o quão incrível e especial tu és para mim,<p>
+        <p>Quando eu penso em você,<p>
+        <p>o meu coração bate mais forte<p>
+        <p>e um sorriso sai de mim de forma automática,<p>
+        <p>como se você tivesse o poder de me fazer feliz com apenas um olhar!<p>
+        <p>Não me cansarei de dizer o quão incrível e especial tu és para mim,<p>
         <p>e até que o meu coração se canse de bater,<p>
         <p>estaremos juntos no começo da poesia de nossas vidas e no fim dela,<p>
         <p>e lá eu continuarei dizendo,<p>
-        <p>EU TE AMO<p>
-        <p>Feliz 6 meses de namoro Amor da Minha Vida!</p>
+        <p>EU TE AMO💖<p>
+        <p>Feliz 6 meses de namoro Amor da Minha Vida!🎈❤️</p>
     </div>
-    <audio>
-        <iframe width="0" height="0" src="https://www.youtube.com/embed/ShZ978fBl6Y?autoplay=1&loop=1&playlist=ShZ978fBl6Y" 
-        frameborder="0" allow="autoplay" allowfullscreen></iframe>
-    </audio>
+   <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio embutido.
+  </audio>
+
+  <button class="music-btn" onclick="document.getElementById('bg-music').play()">💖Tocar Música💖</button>
+
+  <script>
+    // Tenta iniciar a música automaticamente
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('bg-music');
+      const playAttempt = audio.play();
+      if (playAttempt !== undefined) {
+        playAttempt.catch(() => {
+          // Nada — o botão vai aparecer e o usuário toca
+        });
+      }
+    });
+  </script>
 </body>
 </html>
